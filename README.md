@@ -13,5 +13,5 @@ This application has been developing using PHP 7.4.13, MySQL, JavaScript, and Po
 * To change database configuration (user, password, database name), change the info within inc/config.inc.php. 
 * To customize the dashboard, change the following files: RestAPI.php, static/views/DashboardPage.class.php, and static/js/dash.js.js. 
 
-The user manual is on the wiki page: https://github.com/fcasaloti/assessment/wiki/User-Manual
+The user manual is on the wiki page: https://github.com/fcasaloti/assessment/wiki
 
