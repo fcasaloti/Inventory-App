@@ -29,7 +29,7 @@ CREATE TABLE employee (
     time TINYTEXT NOT NULL
 ) Engine = InnoDB;
 CREATE TABLE computer (
-    computerId INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    computerId INT AUTO_INCREMENT PRIMARY KEY,
     eId INT NOT NULL,
     computerOwner TINYTEXT NOT NULL,
     computerTag TINYTEXT NOT NULL,
@@ -59,8 +59,7 @@ CREATE TABLE computer (
     notes TINYTEXT NOT NULL,
     username TINYTEXT NOT NULL,
     time TINYTEXT NOT NULL,
-    FOREIGN KEY (eId) REFERENCES employee(eId) ON DELETE
-    CASCADE ON UPDATE CASCADE
+    FOREIGN KEY (eId) REFERENCES employee(eId) ON UPDATE CASCADE
 ) Engine = InnoDB;
 CREATE TABLE software (
     swId INT AUTO_INCREMENT PRIMARY KEY,
@@ -68,7 +67,7 @@ CREATE TABLE software (
     swName TINYTEXT NOT NULL,
     swVersion TINYTEXT NOT NULL,
     swVendor TINYTEXT NOT NULL,
-    FOREIGN KEY (computerId) REFERENCES computer(computerId) ON DELETE CASCADE ON UPDATE CASCADE
+    FOREIGN KEY (computerId) REFERENCES computer(computerId) ON UPDATE CASCADE
 ) Engine = InnoDB;
 CREATE TABLE device (
     deviceId INT AUTO_INCREMENT PRIMARY KEY,
@@ -85,8 +84,7 @@ CREATE TABLE device (
     notes TINYTEXT NOT NULL,
     username TINYTEXT NOT NULL,
     time TINYTEXT NOT NULL,
-    FOREIGN KEY (eId) REFERENCES employee(eId) ON DELETE
-    CASCADE ON UPDATE CASCADE
+    FOREIGN KEY (eId) REFERENCES employee(eId) ON UPDATE CASCADE
 ) Engine = InnoDB;
 INSERT INTO user (
         name,

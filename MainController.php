@@ -420,7 +420,7 @@ if (
             //if it is a request to delete a device such printer/network
             if (isset($_GET['action']) && $_GET['action'] == "deleteEmployee") {
                 if ($_GET['eId'] != 1) {
-                    $blankEmployee = EmployeeDAO::getSingleEmployeeByEmail('anonymous@domain.com');
+                    $blankEmployee = EmployeeDAO::getSingleEmployeeByEmail('blank@domain.com');
                     ComputerDAO::updateComputerByEid($_GET['eId'], $blankEmployee->eId);
                     DeviceDAO::updateDeviceByEid($_GET['eId'], $blankEmployee->eId);
                     $deleted = EmployeeDAO::deleteEmployee($_GET['eId']);

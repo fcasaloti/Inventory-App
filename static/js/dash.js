@@ -141,7 +141,7 @@ function osBar(osData) {
                 },
                 title: {
                     display: true,
-                    text: 'OPERATING SYSTEMS VERSIONS'
+                    text: 'OPERATING SYSTEMS VERSIONS (ONLY EMPLOYEES)'
                 }
             }
         }
@@ -306,7 +306,7 @@ function osLicTypesBar(e) {
                 },
                 title: {
                     display: true,
-                    text: 'OPERATING SYSTEMS LICENSE TYPES'
+                    text: 'OPERATING SYSTEMS LICENSE TYPES (ONLY EMPLOYEES)'
                 }
             }
         }
@@ -349,7 +349,7 @@ function antivirusBar(av) {
                 },
                 title: {
                     display: true,
-                    text: 'ANTIVIRUS SOFTWARES'
+                    text: 'ANTIVIRUS SOFTWARES (ONLY EMPLOYEES)'
                 }
             }
         }
@@ -358,6 +358,7 @@ function antivirusBar(av) {
 }
 
 function computersCountryBar(locations) {
+    console.log(locations);
     countries = [];
     count = [];
     for (var i = 0; i < locations.length; i++) {
@@ -393,7 +394,7 @@ function computersCountryBar(locations) {
                 },
                 title: {
                     display: true,
-                    text: 'COMPUTERS PER COUNTRY'
+                    text: 'COMPUTERS PER COUNTRY (ONLY EMPLOYEES)'
                 }
             }
         }
