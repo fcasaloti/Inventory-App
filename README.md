@@ -1,4 +1,4 @@
-# Assessment App
+# Inventory App
 
 This application provides a WEB interface to help companies to do the inventory of computers and users.
 
